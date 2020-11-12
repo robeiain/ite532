@@ -30,14 +30,10 @@ mkdir /git
 
 cd /git
 
-git config --global user.name "tallmantim"
-
-git config --global user.email "tim.jones@itmasters.edu.au"
-
 git init
 
 git clone https://github.com/turnbullpress/dockerbook-code
 
-git clone https:github.com/tallmantim/ite532
+git clone https://github.com/tallmantim/ite532
 
 shutdown -h 180
