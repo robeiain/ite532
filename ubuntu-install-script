@@ -39,3 +39,5 @@ git init
 git clone https://github.com/turnbullpress/dockerbook-code
 
 git clone https:github.com/tallmantim/ite532
+
+shutdown -h 180
