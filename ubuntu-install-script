@@ -1,8 +1,8 @@
-sudo -s
+sudo -s                    # run everything here as superuser
 
-apt-get update -y
+apt-get update -y          # check what updates are available
 
-apt-get install \
+apt-get install \          # install prerequistites for docker
     apt-transport-https \
     ca-certificates \
     curl \
@@ -11,24 +11,24 @@ apt-get install \
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-add-apt-repository \
+add-apt-repository \       # add docker as a repository
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
 
-apt-get update -y
+apt-get update -y          # update again to pull info about docker
 
-apt-get install -y \
+apt-get install -y \       # install docker components
         docker-ce \
         docker-ce-cli \
         containerd.io \
-        git \
-        nano
+        git \            # git platform to sycn work in progress
+        nano             # my prefered text editor
 
 
 mkdir /git
 
-cd /git
+cd /git                  # I want to grab the docker book components plus my work in progress
 
 git init
 
@@ -36,4 +36,4 @@ git clone https://github.com/turnbullpress/dockerbook-code
 
 git clone https://github.com/tallmantim/ite532
 
-shutdown -h 180
+shutdown -h 180          # set my VM to shut down after 3 hours, saving resources and money
