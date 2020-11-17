@@ -2,7 +2,7 @@ sudo -s                    # run everything here as superuser
 
 apt-get update -y          # check what updates are available
 
-apt-get install \          # install prerequistites for docker
+apt-get install -y \          # install prerequistites for docker
     apt-transport-https \
     ca-certificates \
     curl \
