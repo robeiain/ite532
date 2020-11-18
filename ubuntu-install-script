@@ -1,4 +1,4 @@
-sudo -s 
+sudo -s
 
 apt-get update -y
 
@@ -16,7 +16,7 @@ add-apt-repository \
    $(lsb_release -cs) \
    stable"
 
-apt-get update -y 
+apt-get update -y
 
 apt-get install -y \
         docker-ce \
@@ -24,8 +24,7 @@ apt-get install -y \
         containerd.io \
         git \
         nano
-
-
+        
 mkdir /git
 
 cd /git
