@@ -24,7 +24,6 @@ apt-get install -y \
         containerd.io \
         git \
         nano
-
 mkdir /git
 
 cd /git
