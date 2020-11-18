@@ -1,8 +1,8 @@
-sudo -s                    # run everything here as superuser
+sudo -s 
 
-apt-get update -y          # check what updates are available
+apt-get update -y
 
-apt-get install -y \          # install prerequistites for docker
+apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -11,24 +11,24 @@ apt-get install -y \          # install prerequistites for docker
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-add-apt-repository \       # add docker as a repository
+add-apt-repository \ 
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
 
-apt-get update -y          # update again to pull info about docker
+apt-get update -y 
 
-apt-get install -y \       # install docker components
+apt-get install -y \
         docker-ce \
         docker-ce-cli \
         containerd.io \
-        git \            # git platform to sycn work in progress
-        nano             # my prefered text editor
+        git \
+        nano
 
 
 mkdir /git
 
-cd /git                  # I want to grab the docker book components plus my work in progress
+cd /git
 
 git init
 
