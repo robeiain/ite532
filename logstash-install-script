@@ -1,6 +1,6 @@
 apt-get -qq update
 
-apt-get -qq install wget gnupg2 openjdk-8-jdk
+echo 1 | apt-get -qq install wget gnupg2 openjdk-8-jdk
 
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | apt-key add -
 
