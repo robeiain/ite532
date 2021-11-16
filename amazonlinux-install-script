@@ -1,0 +1,11 @@
+sudo -s
+
+yum update -y
+
+yum install docker
+
+service docker s
+
+usermod -a -G docker ec2-user
+
+yum install -y git nano
