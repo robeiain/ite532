@@ -2,9 +2,9 @@ sudo -s
 
 yum update -y
 
-yum install docker
+amazon-linux-extras install docker
 
-service docker s
+service docker start
 
 usermod -a -G docker ec2-user
 
