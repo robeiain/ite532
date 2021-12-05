@@ -1,14 +1,14 @@
+#!/bin/bash
+
 yum update -y
 
-amazon-linux-extras install docker
+amazon-linux-extras install -y docker
+
+yum install -y git nano sudo
 
 service docker start
 
 usermod -a -G docker ec2-user
-
-yum install -y git nano sudo
-
-sudo -s
 
 mkdir /git
 
@@ -16,7 +16,7 @@ cd /git
 
 git init
 
-git clone https://github.com/turnbullpress/dockerbook-code
+git clone https://github.com/tallmantim/dockerbook-code
 
 git clone https://github.com/tallmantim/ite532
 
