@@ -32,6 +32,6 @@ git init
 
 git clone https://github.com/turnbullpress/dockerbook-code
 
-git clone https://github.com/tallmantim/ite532
+git clone https://github.com/robeiain/ite532
 
 shutdown -h 180          # set my VM to shut down after 3 hours, saving resources and money
