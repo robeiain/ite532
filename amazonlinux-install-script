@@ -18,7 +18,7 @@ cd /git
 
 git init
 
-git clone https://github.com/tallmantim/dockerbook-code
+git clone https://github.com/robeiain/dockerbook-code
 
-git clone https://github.com/tallmantim/ite532
+git clone https://github.com/robeiain/ite532
 
