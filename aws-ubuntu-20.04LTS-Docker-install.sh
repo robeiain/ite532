@@ -21,3 +21,6 @@ sudo apt-get update
 sudo apt-get install -qyy docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 sudo service docker start
+
+sudo usermod -a -G docker $USER
+
