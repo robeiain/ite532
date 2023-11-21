@@ -22,3 +22,9 @@ git clone https://github.com/robeiain/dockerbook-code
 
 git clone https://github.com/robeiain/ite532
 
+if [ $USER = 'root' ]; then
+  sudo usermod -a -G docker $SUDO_USER
+else
+  sudo usermod -a -G docker $USER
+fi
+
