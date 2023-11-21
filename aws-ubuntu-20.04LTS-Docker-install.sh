@@ -22,5 +22,10 @@ sudo apt-get install -qyy docker-ce docker-ce-cli containerd.io docker-compose-p
 
 sudo service docker start
 
-sudo usermod -a -G docker $USER
+if [ $USER = 'root' ]; then
+  sudo usermod -a -G docker $SUDO_USER
+else
+  sudo usermod -a -G docker $USER
+fi
+
 
